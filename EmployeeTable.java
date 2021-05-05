@@ -53,6 +53,8 @@ public class EmployeeTable extends GenericServlet {
 	 Class.forName("oracle.jdbc.driver.OracleDriver");
      Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL","system","sriram");
      Statement st=con.createStatement();
+     System.out.println("Employee Table...!!");
+     System.out.println("Starting Employee Table...!!");
      System.out.println("connection established successfully...!!");     
      ResultSet rs=st.executeQuery("Select * from emp");
 
